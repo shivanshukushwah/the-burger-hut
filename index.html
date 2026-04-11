@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Burger Hut | Gourmet Culinary Experience</title>
+    <meta name="description" content="Experience the finest gourmet burgers at The Burger Hut. Handcrafted with passion, grilled to perfection.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container nav-content">
+            <div class="logo">
+                BURGER<span>HUT</span>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">Our Story</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-cta">
+                <a href="#menu" class="btn btn-sm">Order Now</a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg-accent"></div>
+        <div class="container hero-grid">
+            <div class="hero-text reveal">
+                <span class="badge">EST. 2024</span>
+                <h1>Crafting the <br><span class="highlight">Ultimate</span> Burger</h1>
+                <p>Taste the symphony of fresh ingredients and artisan craftsmanship in every bite. Your journey to burger perfection starts here.</p>
+                <div class="hero-btns">
+                    <a href="#menu" class="btn">Explore Menu</a>
+                    <a href="#about" class="btn btn-outline">Our Story</a>
+                </div>
+            </div>
+            <div class="hero-image-container reveal">
+                <img src="assets/hero-burger.png" alt="Gourmet Burger" class="floating-burger">
+                <div class="hero-circle"></div>
+                <!-- Decorative Elements -->
+                <div class="decor decor-1">🍔</div>
+                <div class="decor decor-2">✨</div>
+                <div class="decor decor-3">🔥</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Preview -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Gourmet Selection</h2>
+                <p>Curated by our master chefs for the ultimate flavor profile</p>
+            </div>
+            
+            <div class="menu-grid">
+                <!-- Burger 1 -->
+                <div class="glass-card menu-card reveal">
+                    <div class="card-img">
+                        <img src="assets/classic-burger.png" alt="Classic Cheeseburger">
+                    </div>
+                    <div class="card-info">
+                        <h3>Royal Classic</h3>
+                        <p>Double Wagyu patty, aged cheddar, secret house sauce, and caramelized onions.</p>
+                        <div class="card-footer">
+                            <span class="price">$14.99</span>
+                            <button class="add-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Burger 2 -->
+                <div class="glass-card menu-card reveal">
+                    <div class="card-img">
+                        <img src="assets/spicy-chicken.png" alt="Spicy Chicken Burger">
+                    </div>
+                    <div class="card-info">
+                        <h3>Blazing Soul</h3>
+                        <p>Spicy buttermilk fried chicken, jalapeño slaw, and fiery sriracha mayo.</p>
+                        <div class="card-footer">
+                            <span class="price">$12.99</span>
+                            <button class="add-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Burger 3 -->
+                <div class="glass-card menu-card reveal">
+                    <div class="card-img">
+                        <img src="assets/veggie-burger.png" alt="Veggie Garden Burger">
+                    </div>
+                    <div class="card-info">
+                        <h3>Green Earth</h3>
+                        <p>Avocado mash, grilled halloumi, roasted bell peppers, and spinach hummus.</p>
+                        <div class="card-footer">
+                            <span class="price">$13.50</span>
+                            <button class="add-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="view-all reveal">
+                <a href="#" class="btn btn-outline">View Full Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container about-grid">
+            <div class="about-content reveal">
+                <h2>Where Taste <br>Meets Art</h2>
+                <p>Founded on a simple belief that a burger should be more than just a meal—it should be an experience. We source our ingredients from local farms and bake our buns daily.</p>
+                <ul class="features">
+                    <li><span>✔</span> 100% Wagyu Beef</li>
+                    <li><span>✔</span> Farm-to-Table Veggies</li>
+                    <li><span>✔</span> Secret Seasoning Blend</li>
+                </ul>
+            </div>
+            <div class="about-stats reveal">
+                <div class="stat-card glass-card">
+                    <h3>10k+</h3>
+                    <p>Happy Customers</p>
+                </div>
+                <div class="stat-card glass-card">
+                    <h3>15+</h3>
+                    <p>Gourmet Recipes</p>
+                </div>
+                <div class="stat-card glass-card">
+                    <h3>4.9</h3>
+                    <p>Star Ratings</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="logo">BURGER<span>HUT</span></div>
+                <p>Bringing the finest gourmet burgers to your neighborhood since 2024.</p>
+                <div class="social-links">
+                    <a href="#">IG</a>
+                    <a href="#">FB</a>
+                    <a href="#">TW</a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Keep in Touch</h4>
+                <p>123 Burger Lane, Foodie City, FC 12345</p>
+                <p>hello@burgerhut.com</p>
+                <p>+1 (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 The Burger Hut Cafe. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
