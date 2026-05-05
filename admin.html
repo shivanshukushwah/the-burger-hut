@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel | The Burger Hut</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="admin-body">
+    
+    <!-- Login Section -->
+    <div id="login-section" class="auth-container">
+        <div class="glass-card auth-card reveal active">
+            <div class="auth-header">
+                <div class="logo">BURGER<span>HUT</span> Admin</div>
+                <p>Welcome back, Owner. Please authenticate.</p>
+            </div>
+            <div class="glass-form">
+                <div class="form-group">
+                    <label for="admin-pass">Access Code</label>
+                    <input type="password" id="admin-pass" placeholder="Enter owner code...">
+                </div>
+                <button id="login-btn" class="btn" style="width: 100%;">Login to Dashboard</button>
+                <div style="text-align: center; margin-top: 1.5rem;">
+                    <a href="index.html" style="color: var(--text-secondary); font-size: 0.9rem; text-decoration: underline;">← Back to Cafe Website</a>
+                </div>
+                <p id="login-error" style="color: var(--accent); margin-top: 1rem; text-align: center; display: none;">Invalid code. Please try again.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Admin Dashboard Section (Hidden by default) -->
+    <div id="admin-dashboard" style="display: none;">
+        <header class="admin-header">
+            <div class="container admin-nav">
+                <div class="logo">BURGER<span>HUT</span> <span style="font-size: 0.8rem; opacity: 0.6; margin-left: 10px;">Admin Panel</span></div>
+                <nav>
+                    <ul class="nav-links" style="display: flex;">
+                        <li><a href="#" class="tab-link active" data-tab="orders">Orders</a></li>
+                        <li><a href="#" class="tab-link" data-tab="menu">Menu Manager</a></li>
+                        <li><a href="index.html">View Site</a></li>
+                        <li><a href="#" id="logout-btn" style="color: var(--accent);">Logout</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="container">
+            <!-- Orders Tab -->
+            <section id="orders-tab" class="admin-tab-content active admin-section">
+                <div class="section-title" style="text-align: left; margin-bottom: 2rem;">
+                    <h2>Live Orders</h2>
+                    <p>Manage incoming customer orders below</p>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="glass-card stat-card admin">
+                        <h3 id="total-revenue">$0.00</h3>
+                        <p>Estimated Revenue</p>
+                    </div>
+                    <div class="glass-card stat-card admin">
+                        <h3 id="order-count">0</h3>
+                        <p>Total Orders</p>
+                    </div>
+                    <div class="glass-card stat-card admin">
+                        <h3 id="pending-count">0</h3>
+                        <p>Pending Orders</p>
+                    </div>
+                </div>
+
+                <div class="glass-table-container">
+                    <table class="glass-table">
+                        <thead>
+                            <tr>
+                                <th>Order ID</th>
+                                <th>Item</th>
+                                <th>Price</th>
+                                <th>Time</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="orders-list">
+                            <!-- Orders will be injected here -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Menu Tab -->
+            <section id="menu-tab" class="admin-tab-content admin-section">
+                <div class="section-title" style="text-align: left; margin-bottom: 2rem;">
+                    <h2>Menu Management</h2>
+                    <p>Update pricing and availability of your gourmet selection</p>
+                </div>
+                
+                <div class="glass-table-container">
+                    <table class="glass-table">
+                        <thead>
+                            <tr>
+                                <th>Burger Name</th>
+                                <th>Description</th>
+                                <th>Price</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="menu-management-list">
+                            <!-- Menu items will be injected here -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Edit Price Modal (Simple prompt logic in JS) -->
+
+    <script src="admin.js"></script>
+</body>
+</html>

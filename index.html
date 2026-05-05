@@ -18,8 +18,9 @@
             <nav>
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#menu">Menu</a></li>
                     <li><a href="#about">Our Story</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#location">Find Us</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -43,8 +44,8 @@
                 <h1>Crafting the <br><span class="highlight">Ultimate</span> Burger</h1>
                 <p>Taste the symphony of fresh ingredients and artisan craftsmanship in every bite. Your journey to burger perfection starts here.</p>
                 <div class="hero-btns">
-                    <a href="#menu" class="btn">Explore Menu</a>
-                    <a href="#about" class="btn btn-outline">Our Story</a>
+                    <a href="#about" class="btn">Our Story</a>
+                    <a href="#menu" class="btn btn-outline">Explore Menu</a>
                 </div>
             </div>
             <div class="hero-image-container reveal">
@@ -58,6 +59,40 @@
         </div>
     </section>
 
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container about-grid">
+            <div class="about-content reveal">
+                <span class="badge" style="margin-bottom: 2rem;">THE CRAFT</span>
+                <h2>Where Taste <br>Meets Art</h2>
+                <p>Founded on a simple belief that a burger should be more than just a meal—it should be an experience. We source our ingredients from local farms and bake our buns daily.</p>
+                <ul class="features">
+                    <li><span>✔</span> 100% Wagyu Beef</li>
+                    <li><span>✔</span> Farm-to-Table Veggies</li>
+                    <li><span>✔</span> Secret Seasoning Blend</li>
+                </ul>
+                <div class="about-stats" style="margin-top: 3rem;">
+                    <div class="stat-card glass-card">
+                        <h3>10k+</h3>
+                        <p>Happy Customers</p>
+                    </div>
+                    <div class="stat-card glass-card">
+                        <h3>15+</h3>
+                        <p>Special Recipes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image-column reveal">
+                <div class="about-image-wrapper">
+                    <img src="assets/story-visual.png" alt="Burger Hut Interior">
+                    <div class="story-badge">
+                        SINCE<br>2024
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Menu Preview -->
     <section id="menu" class="menu-section">
         <div class="container">
@@ -66,83 +101,45 @@
                 <p>Curated by our master chefs for the ultimate flavor profile</p>
             </div>
             
+            <div class="menu-filters reveal">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="pizza">Pizzas</button>
+                <button class="filter-btn" data-category="pasta">Pasta</button>
+                <button class="filter-btn" data-category="sides">Sides</button>
+                <button class="filter-btn" data-category="mains">Mains</button>
+                <button class="filter-btn" data-category="desserts">Desserts</button>
+                <button class="filter-btn" data-category="beverages">Beverages</button>
+            </div>
+
             <div class="menu-grid">
-                <!-- Burger 1 -->
-                <div class="glass-card menu-card reveal">
-                    <div class="card-img">
-                        <img src="assets/classic-burger.png" alt="Classic Cheeseburger">
-                    </div>
-                    <div class="card-info">
-                        <h3>Royal Classic</h3>
-                        <p>Double Wagyu patty, aged cheddar, secret house sauce, and caramelized onions.</p>
-                        <div class="card-footer">
-                            <span class="price">$14.99</span>
-                            <button class="add-btn">+</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Burger 2 -->
-                <div class="glass-card menu-card reveal">
-                    <div class="card-img">
-                        <img src="assets/spicy-chicken.png" alt="Spicy Chicken Burger">
-                    </div>
-                    <div class="card-info">
-                        <h3>Blazing Soul</h3>
-                        <p>Spicy buttermilk fried chicken, jalapeño slaw, and fiery sriracha mayo.</p>
-                        <div class="card-footer">
-                            <span class="price">$12.99</span>
-                            <button class="add-btn">+</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Burger 3 -->
-                <div class="glass-card menu-card reveal">
-                    <div class="card-img">
-                        <img src="assets/veggie-burger.png" alt="Veggie Garden Burger">
-                    </div>
-                    <div class="card-info">
-                        <h3>Green Earth</h3>
-                        <p>Avocado mash, grilled halloumi, roasted bell peppers, and spinach hummus.</p>
-                        <div class="card-footer">
-                            <span class="price">$13.50</span>
-                            <button class="add-btn">+</button>
-                        </div>
-                    </div>
-                </div>
+                <!-- Dynamically populated by script.js -->
             </div>
             
             <div class="view-all reveal">
-                <a href="#" class="btn btn-outline">View Full Menu</a>
+                <a href="#menu" id="view-full-menu" class="btn btn-outline">View Full Menu</a>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <div class="container about-grid">
-            <div class="about-content reveal">
-                <h2>Where Taste <br>Meets Art</h2>
-                <p>Founded on a simple belief that a burger should be more than just a meal—it should be an experience. We source our ingredients from local farms and bake our buns daily.</p>
-                <ul class="features">
-                    <li><span>✔</span> 100% Wagyu Beef</li>
-                    <li><span>✔</span> Farm-to-Table Veggies</li>
-                    <li><span>✔</span> Secret Seasoning Blend</li>
-                </ul>
+    <!-- Location Section (Map) -->
+    <section id="location" class="map-section reveal">
+        <div class="container">
+            <div class="section-title">
+                <h2>Find Us</h2>
+                <p>Visit our gourmet boutique for the ultimate experience</p>
             </div>
-            <div class="about-stats reveal">
-                <div class="stat-card glass-card">
-                    <h3>10k+</h3>
-                    <p>Happy Customers</p>
-                </div>
-                <div class="stat-card glass-card">
-                    <h3>15+</h3>
-                    <p>Gourmet Recipes</p>
-                </div>
-                <div class="stat-card glass-card">
-                    <h3>4.9</h3>
-                    <p>Star Ratings</p>
+            <div class="map-container glass-card">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28373.864388439975!2d73.275817815625!3d28.0436854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393fe7553531f82f%3A0x64c8d50454316d8c!2sMukta%20Prasad%20Colony%2C%20Bikaner%2C%20Rajasthan%20334004!5e0!3m2!1sen!2sin!4v1712869500000!5m2!1sen!2sin" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+                <div class="map-overlay">
+                    <div class="glass-card map-card">
+                        <h3>Main Branch</h3>
+                        <p>Mukta Prasad Colony, Bikaner, Rajasthan 334004</p>
+                        <p style="margin-top: 0.5rem; font-weight: 600;">Open: 10AM - 11PM</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -164,8 +161,8 @@
                 <h4>Quick Links</h4>
                 <ul>
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#menu">Menu</a></li>
                     <li><a href="#about">About Us</a></li>
+                    <li><a href="#menu">Menu</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -181,6 +178,43 @@
         </div>
     </footer>
 
+    <!-- Chatbot trigger -->
+    <div id="chat-trigger" class="chatbot-trigger">
+        <svg viewBox="0 0 24 24">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+        </svg>
+    </div>
+
+    <!-- Chat window -->
+    <div id="chat-window" class="chat-window">
+        <div class="chat-header">
+            <div class="bot-avatar">H</div>
+            <div>
+                <h4 style="margin: 0; color: var(--primary);">HutBot</h4>
+                <p style="margin: 0; font-size: 0.7rem; opacity: 0.6;">Online | AI Assistant</p>
+            </div>
+        </div>
+        <div id="chat-messages" class="chat-messages">
+            <div class="message bot">
+                Hey there! 👋 I'm **HutBot**, your personal burger connoisseur. Craving something gourmet today? or need help with your order?
+            </div>
+        </div>
+        <div class="quick-replies">
+            <button class="quick-btn" onclick="sendQuickReply('Suggest me a burger')">🍔 Suggest a burger</button>
+            <button class="quick-btn" onclick="sendQuickReply('How to order?')">📝 How to order?</button>
+            <button class="quick-btn" onclick="sendQuickReply('Give a review')">⭐ Give a review</button>
+        </div>
+        <div class="chat-input-area">
+            <input type="text" id="chat-input" class="chat-input" placeholder="Ask me anything...">
+            <button id="chat-send" class="chat-send">
+                <svg viewBox="0 0 24 24" style="width: 20px; height: 20px; fill: black;">
+                    <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+
     <script src="script.js"></script>
+    <script src="bot.js"></script>
 </body>
 </html>
